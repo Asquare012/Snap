@@ -31,3 +31,16 @@ function show2() {
         img2.src = "icon-arrow-down.svg";
     }
 }
+
+// menu bar
+// open menu
+let butt = document.querySelector("#menubutt");
+let menu = document.querySelector(".menu");
+butt.addEventListener("click", () => {
+    menu.style.right = 0;
+});
+// close menu
+let close = document.querySelector("#close");
+close.addEventListener("click", () => {
+    menu.style.right = -280;
+});
