@@ -8,6 +8,14 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
+.menu {
+    display: none;
+}
+
 
 /* header */
 
@@ -44,19 +52,20 @@ html {
 }
 
 #my-nav ul li:nth-child(6) {
-    margin: 0 3.5vw 0 38vw;
+    margin: 0 3.5vw 0 40vw;
 }
 
 #my-nav ul li:nth-child(7) {
-    border: 2px solid #696969;
+    border: 1px solid #696969;
     border-radius: 10px;
-    padding: 6px 18px;
+    padding: 8px 16px;
     outline: none;
     transition: border 0.1s;
 }
 
 #my-nav ul li:last-child {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -188,8 +197,9 @@ html {
 #butt:hover {
     background: #fafafa;
     color: #141414;
-    border: 1px solid #141414;
     font-weight: bold;
+    border: 0.5px solid black;
+    padding: 0.92vw 2vw;
 }
 
 #screen #left .bottom-images img {
@@ -212,12 +222,17 @@ html {
     min-width: 350px;
     width: 31vw;
     padding-top: 60px;
+    padding-left: -40px;
+}
+
+#screen #right .menu {
+    display: none;
 }
 
 
 /* media queries(tablet) */
 
-@media all and (min-width: 800px) and (max-width: 1100px) {
+@media all and (min-width: 700px) and (max-width: 1100px) {
     #my-nav ul {
         display: flex;
         align-items: center;
@@ -256,18 +271,22 @@ html {
         padding-top: 60px;
         padding-right: 30px;
     }
+    #screen #left #big {
+        font-size: 4vw;
+    }
+    #screen #left #mini {
+        line-height: 23px;
+        margin: 0 100px 0 0;
+    }
 }
 
 
 /* media queries(mobile) */
 
-@media all and (max-width: 800px) {
-    body {
-        overflow-x: hidden;
-    }
+@media all and (min-width: 200px) and (max-width: 700px) {
     #my-nav #mylogo {
         width: 14vw;
-        margin-left: -10px;
+        margin-left: -15px;
     }
     #my-nav ul {
         margin-bottom: 25px;
@@ -277,7 +296,7 @@ html {
     }
     #my-nav ul li:last-child {
         display: block;
-        margin-left: 66vw;
+        margin-left: 64vw;
     }
     #screen {
         display: flex;
@@ -302,7 +321,7 @@ html {
         width: 100%;
     }
     #screen #left #big {
-        font-size: 8vw;
+        font-size: 6vw;
         padding: 30px 0 20px 0;
         margin: 0;
     }
@@ -326,5 +345,40 @@ html {
     }
     #screen #right #right-image {
         margin-top: -150px;
+    }
+    .menu {
+        display: block;
+        height: 100vh;
+        width: 55%;
+        position: absolute;
+        right: -280;
+        top: 0;
+        transition: right 0.5s ease-in-out;
+        background: #fafafa;
+        font-size: 15px;
+        box-shadow: 1px 1px 1px 1px black;
+    }
+    .menu #close {
+        font-size: 40px;
+        float: right;
+        padding: 10px 20px 10px 0;
+        cursor: pointer;
+        color: #1b1a1a;
+    }
+    .menu ol {
+        list-style: none;
+        padding: 100px 0 0 30px;
+    }
+    .menu ol li {
+        padding: 0 10px 20px 0;
+        color: #777474;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: color 0.1s;
+    }
+    .menu ol li:hover {
+        color: #141414;
     }
 }
