@@ -6,7 +6,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .menu {
@@ -196,7 +195,6 @@ html {
     color: #141414;
     font-weight: bold;
     border: 0.5px solid black;
-    padding: 0.92vw 2vw;
 }
 
 #screen #left .bottom-images img {
@@ -281,6 +279,9 @@ html {
 /* media queries(mobile) */
 
 @media all and (min-width: 200px) and (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
     #my-nav #mylogo {
         width: 14vw;
         margin-left: -15px;
@@ -295,9 +296,12 @@ html {
         display: block;
         margin-left: 64vw;
     }
+    #my-nav ul li:last-child:active {
+        background-color: rebeccapurple;
+    }
     #screen {
         display: flex;
-        width: 100%;
+        width: 100vw;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -345,22 +349,28 @@ html {
     }
     .menu {
         display: block;
-        height: 100vh;
-        width: 55%;
+        height: 100%;
+        min-width: 55%;
         position: absolute;
-        right: -280;
+        right: -400;
+        text-align: left;
         top: 0;
-        transition: right 0.5s ease-in-out;
+        bottom: 0;
+        transition: right 0.4s ease-in-out;
         background: #fafafa;
         font-size: 15px;
         box-shadow: 1px 1px 1px 1px black;
+        font-weight: 200;
     }
     .menu #close {
-        font-size: 40px;
+        font-size: 35px;
         float: right;
         padding: 10px 20px 10px 0;
         cursor: pointer;
         color: #1b1a1a;
+    }
+    .menu #close:active {
+        color: red;
     }
     .menu ol {
         list-style: none;
@@ -377,5 +387,19 @@ html {
     }
     .menu ol li:hover {
         color: #141414;
+    }
+    /* side menu drop down */
+    .menu #side-drop {
+        font-size: 0.9em;
+        margin: 10px 0 10px 20px;
+        list-style: none;
+    }
+    .menu #side-drop img {
+        padding-right: 9px;
+    }
+    .menu #side-drop2 {
+        font-size: 0.9em;
+        margin: 10px 0 10px 20px;
+        list-style: none;
     }
 }
