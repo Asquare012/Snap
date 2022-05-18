@@ -308,6 +308,7 @@ html {
         padding-top: 180px;
         text-align: center;
         overflow-x: hidden;
+        background-color:red;
     }
     #drop {
         display: none;
