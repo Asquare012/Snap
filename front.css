@@ -307,6 +307,7 @@ html {
         align-items: center;
         padding-top: 180px;
         text-align: center;
+        overflow-x: hidden;
     }
     #drop {
         display: none;
