@@ -302,13 +302,13 @@ html {
     #screen {
         display: flex;
         width: 100vw;
+        height: 100vh;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         padding-top: 180px;
         text-align: center;
-        overflow-x: hidden;
-        background-color:red;
+        background-color: red;
     }
     #drop {
         display: none;
