@@ -349,6 +349,9 @@ html {
     #screen #right #right-image {
         margin-top: -150px;
     }
+    #menubutt {
+        padding: 10px;
+    }
     .menu {
         display: block;
         height: 100%;
