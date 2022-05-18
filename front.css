@@ -281,13 +281,14 @@ html {
 @media all and (min-width: 200px) and (max-width: 700px) {
     body {
         overflow-x: hidden;
+        height: 100vh;
     }
     #my-nav #mylogo {
         width: 14vw;
         margin-left: -15px;
     }
     #my-nav ul {
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
     #my-nav ul li:not(:first-child) {
         display: none;
@@ -317,14 +318,14 @@ html {
         margin: 0;
         padding: 0;
         width: 100%;
-        font-size: 3vw;
+        font-size: 5vw;
     }
     #screen #left #mini {
         line-height: 23px;
         width: 100%;
     }
     #screen #left #big {
-        font-size: 6vw;
+        font-size: 10vw;
         padding: 30px 0 20px 0;
         margin: 0;
     }
@@ -332,13 +333,13 @@ html {
         display: inline;
     }
     #butt {
-        padding: 3vw 6vw;
+        padding: 5vw 8vw;
         margin-top: 30px;
         margin-bottom: 50px;
     }
     #screen #left .bottom-images img {
         height: auto;
-        width: 13vw;
+        width: 16vw;
         margin: 0 3vw 100px 3vw;
     }
     #screen #right {
