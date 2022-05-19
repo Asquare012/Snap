@@ -278,6 +278,9 @@ html {
 /* media queries(mobile) */
 
 @media all and (min-width: 200px) and (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
     #my-nav #mylogo {
         width: 14vw;
         margin-left: -15px;
@@ -301,7 +304,6 @@ html {
         align-items: center;
         padding-top: 180px;
         text-align: center;
-        overflow-x: hidden;
     }
     #drop {
         display: none;
