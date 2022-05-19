@@ -287,9 +287,6 @@ html {
         width: 14vw;
         margin-left: -15px;
     }
-    #my-nav ul {
-        margin-bottom: 10px;
-    }
     #my-nav ul li:not(:first-child) {
         display: none;
     }
