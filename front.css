@@ -309,7 +309,6 @@ html {
         align-items: center;
         padding-top: 180px;
         text-align: center;
-        background-color: red;
     }
     #drop {
         display: none;
@@ -336,6 +335,7 @@ html {
         padding: 5vw 8vw;
         margin-top: 30px;
         margin-bottom: 50px;
+        font-size: 17px;
     }
     #screen #left .bottom-images img {
         height: auto;
