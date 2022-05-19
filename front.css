@@ -301,6 +301,7 @@ html {
         align-items: center;
         padding-top: 180px;
         text-align: center;
+        overflow-x: hidden;
     }
     #drop {
         display: none;
@@ -349,16 +350,15 @@ html {
         padding: 10px;
     }
     .menu {
-        display: none;
-        height: 300px;
-        min-width: 55%;
+        display: block;
         position: absolute;
-        right: -400;
-        text-align: left;
         top: 0;
+        right: -400;
+        height: 100vh;
+        min-width: 55%;
+        text-align: left;
         transition: right 0.4s ease-in-out;
         background: #fafafa;
-        background: red;
         font-size: 15px;
         box-shadow: 1px 1px 1px 1px black;
         font-weight: 200;
