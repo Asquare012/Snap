@@ -315,6 +315,8 @@ html {
     #screen #left #mini {
         line-height: 23px;
         width: 100%;
+        padding: 0 10px;
+        font-size: 5vw;
     }
     #screen #left #big {
         font-size: 10vw;
