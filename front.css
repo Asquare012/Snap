@@ -198,7 +198,6 @@ html {
 }
 
 #screen #left .bottom-images img {
-    height: auto;
     width: 6vw;
     padding-left: 0.5vw;
 }
@@ -312,9 +311,10 @@ html {
     }
     #screen #left {
         margin: 0;
-        padding: 0;
-        width: 100%;
+        padding-left: 0;
+        width: 100vw;
         font-size: 5vw;
+        height: 100%;
     }
     #screen #left #mini {
         line-height: 23px;
@@ -334,10 +334,13 @@ html {
         margin-bottom: 50px;
         font-size: 17px;
     }
+    #screen #left .bottom-images {
+        background-color: red;
+    }
     #screen #left .bottom-images img {
         height: auto;
         width: 16vw;
-        margin: 0 3vw 100px 3vw;
+        margin: 0 3vw 0 3vw;
     }
     #screen #right {
         margin: 0;
